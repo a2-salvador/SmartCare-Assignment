@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}SmartCare App{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+
+<!-- navbar.html -->
+<div class="patient-dash-navbar">
+    <h1>Patient dashboard</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Book an Appointment</a></li>
+            <li><a href="#">Check Prescription</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+</div>
+<!-- End of navbar.html -->
+
+<h2>Welcome to your dashboard</h2>
+
+<div class="patient-info-container">
+    <ul><h3>Patient Information</h3></ul>
+    <ul>
+        <li><strong>Current Appointment:</strong>
+        <li><strong>Time:</strong>
+        <li><strong>Date:</strong>
+        <li><strong>Location:</strong>
+        <li><strong>Doctor:</strong>
+    </ul>
+</div>
+
+<div class="button-container">
+    <button>Reorder Prescription</button>
+    <button>Reorder Prescription</button>
+</div>
+
+<div class="print-invoice-button">
+    <button>Get Invoice</button>
+    <button>Print Payment</button>
+</div>
+
+</body>
+</html>

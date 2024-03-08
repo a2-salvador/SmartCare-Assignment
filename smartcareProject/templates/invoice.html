@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}SmartCare App{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+
+<!-- navbar.html -->
+<div class="patient-dash-navbar">
+    <h1>Invoice</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Nurse dashboard</a></li>
+            <li><a href="#">Doctor dashboard</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- Table -->
+<table>
+    <thead>
+        <tr>
+            <th>Patient</th>
+            <th>Doctor</th>
+            <th>Prescription Quantity</th>
+            <th>Prescription</th>
+            <th>Invoice</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Example row -->
+        <tr>
+            <td>Ayaan</td>
+            <td>Dr. Sandra</td>
+            <td>-9</td>
+            <td>Paracetamol</td>
+            <td>£1000,000,000</td>
+        </tr>
+        <!-- Add more rows as needed -->
+    </tbody>
+</table>
+
+<div class="print-invoice-container">
+    <button>Print Invoice</button> <!-- Added "Print Invoice" button -->
+</div>

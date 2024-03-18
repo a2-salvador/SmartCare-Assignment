@@ -14,8 +14,8 @@
     <h1>Patient dashboard</h1>
     <nav>
         <ul>
-            <li><a href="#">Book an Appointment</a></li>
-            <li><a href="#">Check Prescription</a></li>
+            <li><a href="{% url 'appointment' %}">Book an Appointment</a></li>
+            <li><a href="{% url 'patient_pres' %}">Check prescription</a></li>
             <li><a href="#">Logout</a></li>
         </ul>
     </nav>
@@ -41,7 +41,7 @@
 </div>
 
 <div class="print-invoice-button">
-    <button>Get Invoice</button>
+    <a href="{% url 'invoice' %}"><button>Get Invoice</button></a>
     <button>Print Payment</button>
 </div>
 

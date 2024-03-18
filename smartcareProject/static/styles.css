@@ -1,4 +1,4 @@
-/* styles.css */
+/* initial nav bar */
 
 body {
     font-family: Arial, sans-serif;
@@ -139,4 +139,122 @@ th {
 
 .print-invoice-button {
     margin-top: 10px; /* Add some space between buttons */
+}
+
+
+
+/* doctor dashboard */
+
+.doctor-dash-navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+.doctor-dash-navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.doctor-dash-navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.doctor-dash-navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.doctor-dash-navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.doctor-info-container {
+    border: 2px solid #333;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin-left: 20px;
+    max-width: 600px;
+}
+
+
+/* appointment dashboard */
+.appointment-dash-navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    margin-bottom: 20px; /* Add margin below the navbar */
+}
+
+.appointment-dash-navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.appointment-dash-navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.appointment-dash-navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.appointment-dash-navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.appointment-info-container {
+    border: 2px solid #333;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin-left: 20px;
+    max-width: 600px;
+}
+
+
+
+/* appoitnment form */
+
+.form-container {
+    border: 1px solid #000000;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="date"],
+.form-container input[type="time"],
+.form-container select {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #0056b3;
 }

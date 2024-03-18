@@ -11,11 +11,11 @@
 
 <!-- navbar.html -->
 <div class="patient-dash-navbar">
-    <h1>Invoice</h1>
+    <h1>Patients' prescriptions</h1>
     <nav>
         <ul>
             <li><a href="{% url 'nurse_dash' %}">Nurse dashboard</a></li>
-            <li><a href="{% url 'doc_dash' %}">Doctor Dashboard</a></li>
+            <li><a href="{% url 'doc_dash' %}">Doctor dashboard</a></li>
             <li><a href="#">Logout</a></li>
         </ul>
     </nav>
@@ -27,24 +27,20 @@
         <tr>
             <th>Patient</th>
             <th>Doctor</th>
-            <th>Prescription Quantity</th>
-            <th>Prescription</th>
-            <th>Invoice</th>
+            <th>Description</th>
         </tr>
     </thead>
     <tbody>
         <!-- Example row -->
         <tr>
-            <td>Ayaan</td>
-            <td>Dr. Sandra</td>
-            <td>-9</td>
-            <td>Paracetamol</td>
-            <td>£1000,000,000</td>
+            <td>Mr Monde</td>
+            <td>Mrs Wynter</td>
+            <td>TBD</td>
         </tr>
         <!-- Add more rows as needed -->
     </tbody>
 </table>
 
 <div class="print-invoice-container">
-    <button>Print Invoice</button> <!-- Added "Print Invoice" button -->
+    <a href="{% url 'invoice' %}"><button>Get Invoice</button></a>
 </div>

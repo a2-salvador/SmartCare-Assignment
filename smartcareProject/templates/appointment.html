@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}SmartCare App{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+
+<!-- navbar.html -->
+<div class="appointment-dash-navbar">
+    <h1>Book an appointment with your local GP</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'patient_dash' %}">Dashboard</a></li>
+            <li><a href="{% url 'patient_pres' %}">Check prescription</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+<div class="form-container">
+    <form action="#" method="post">
+        {% csrf_token %}
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="doctor">Doctor:</label>
+        <select id="doctor" name="doctor" required>
+            <option value="">Select One</option>
+            <option value="dr_smith">Dr. Smith</option>
+            <option value="dr_jones">Dr. Jones</option>
+        </select>
+
+        <label for="nurse">Nurse:</label>
+        <select id="nurse" name="nurse" required>
+            <option value="">Select One</option>
+            <option value="nurse_brown">Nurse Brown</option>
+            <option value="nurse_white">Nurse White</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+

@@ -92,3 +92,31 @@ def invoice(request):
     # For example, fetch data from the database
     # data = SomeModel.objects.all()
     return render(request, 'invoice.html', context={})
+
+
+def doc_dash(request):
+    # Add your logic here
+    # For example, fetch data from the database
+    # data = SomeModel.objects.all()
+    return render(request, 'doc_dash.html', context={})
+
+
+def nurse_dash(request):
+    # Add your logic here
+    # For example, fetch data from the database
+    # data = SomeModel.objects.all()
+    return render(request, 'nurse_dash.html', context={})
+
+
+def patient_pres(request):
+    # Add your logic here
+    # For example, fetch data from the database
+    # data = SomeModel.objects.all()
+    return render(request, 'patient_pres.html', context={})
+
+
+def appointment(request):
+    # Add your logic here
+    # For example, fetch data from the database
+    # data = SomeModel.objects.all()
+    return render(request, 'appointment.html', context={})
